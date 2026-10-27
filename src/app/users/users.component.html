@@ -1,0 +1,4 @@
+<h2>Liste des utilisateurs</h2>
+<input [(ngModel)]="newUser" placeholder="Nom d'utilisateur">
+<button (click)="addUser()">Ajouter</button>
+<ul><li *ngFor="let user of users">{{ user }}</li></ul>
